@@ -202,7 +202,9 @@ curl http://mcp.127-0-0-1.sslip.io:8001/.well-known/oauth-protected-resource
 #   ],
 #   "scopes_supported": [
 #     "basic",
-#     "groups"
+#     "groups",
+#     "roles",
+#     "profile"
 #   ]
 # }
 ```
@@ -228,6 +230,8 @@ You should get a response like this:
 ## Step 5: Test Authentication Flow
 
 Use the MCP Inspector to test the complete OAuth flow.
+
+> **Note:** If you set up your cluster using the [Quick Start Guide](./quick-start.md), Keycloak (port 8002) is not exposed to the host. Run `kubectl port-forward -n gateway-system svc/mcp-gateway-np 8002:8002` in a separate terminal before proceeding.
 
 ```bash
 # Start MCP Inspector (requires Node.js/npm)
