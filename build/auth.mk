@@ -20,7 +20,7 @@ auth-example-setup: cert-manager-install kuadrant-install keycloak-install ## Se
 		OAUTH_RESOURCE="http://mcp.127-0-0-1.sslip.io:8001/mcp" \
 		OAUTH_AUTHORIZATION_SERVERS="https://keycloak.127-0-0-1.sslip.io:8002/realms/mcp" \
 		OAUTH_BEARER_METHODS_SUPPORTED="header" \
-		OAUTH_SCOPES_SUPPORTED="basic,groups,roles,profile" \
+		OAUTH_SCOPES_SUPPORTED="basic,groups,roles,profile,offline_access" \
 		-n mcp-system
 	@echo "✅ OAuth environment variables configured"
 	@echo ""

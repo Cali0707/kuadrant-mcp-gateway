@@ -257,6 +257,10 @@ data:
               "temporary": false
             }
           ],
+          "realmRoles": [
+            "default-roles-mcp",
+            "offline_access"
+          ],
           "groups": [
             "mcp-users",
             "accounting",
@@ -638,7 +642,8 @@ data:
         "basic",
         "email",
         "profile",
-        "roles"
+        "roles",
+        "offline_access"
       ],
       "defaultOptionalClientScopes": [
         "groups"
