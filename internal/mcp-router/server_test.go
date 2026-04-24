@@ -444,7 +444,7 @@ func TestProcess_StreamedBodyExceedsMaxSize(t *testing.T) {
 			msg: &extProcV3.ProcessingRequest{
 				Request: &extProcV3.ProcessingRequest_RequestBody{
 					RequestBody: &extProcV3.HttpBody{
-						Body:        []byte(`itialize","id":1,"params":{"extra":"data"}}`),
+						Body:        []byte(`initialize","id":1,"params":{"extra":"data"}}`),
 						EndOfStream: true,
 					},
 				},
